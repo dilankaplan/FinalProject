@@ -50,6 +50,11 @@ namespace Core.DataAccess.EntityFramework
             }
         }
 
+        public List<TEntity> GetAllByCategory(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(TEntity entity)
         {
             using (TContext context = new TContext())
